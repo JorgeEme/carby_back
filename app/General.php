@@ -76,7 +76,7 @@ class General
     public static function getPostalCode($lat, $lng)
     {
 
-        $key = "AIzaSyA7isARfCj7CVyge3mEHm9CWTiOipwoWTQ";
+        $key = "Your api key";
         $geocodeFromLatlon = file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?latlng=' . $lat . ',' . $lng . '&sensor=true_or_false&key=' . $key);
 
         $output2 = json_decode($geocodeFromLatlon);
@@ -97,7 +97,7 @@ class General
     public static function getAddress($lat, $lng)
     {
 
-        $key = "AIzaSyA7isARfCj7CVyge3mEHm9CWTiOipwoWTQ";
+        $key = "Your api key";
         $geocodeFromLatlon = file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?latlng=' . $lat . ',' . $lng . '&sensor=true_or_false&key=' . $key);
 
         $output2 = json_decode($geocodeFromLatlon);
